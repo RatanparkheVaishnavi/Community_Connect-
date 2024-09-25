@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Connect+</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333333; /* Dark charcoal background color */
+            color: #ffff00;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em; /* Increased header font size */
+            color: #ffff00; /* Pastel pink text color */
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+            background-color: #ffffff; /* Background color for the nav bar */
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 10px; /* Adjusted spacing */
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            font-size: 1.2em; /* Increased font size for nav links */
+        }
+        nav a:hover {
+            color: #005bb5;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 0;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Specific dropdown colors */
+        .dropdown-about .dropdown-content {
+            background-color: #e0f7fa;
+        }
+        .dropdown-features .dropdown-content {
+            background-color: #c8e6c9;
+        }
+        .dropdown-events .dropdown-content {
+            background-color: #fff9c4;
+        }
+        .dropdown-subscriptions .dropdown-content {
+            background-color: #f8bbd0;
+        }
+        .dropdown-contact .dropdown-content {
+            background-color: #dbeaff;
+        }
+        .dropdown-primary-customer .dropdown-content {
+            background-color: #dcedc8;
+        }
+        .dropdown-secondary-customer .dropdown-content {
+            background-color: #f0f4c3;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #0073e6; /* Blue text color */
+            font-size: 2em; /* Increased font size for section headings */
+            background-color: #fce4ec; /* Pastel pink background color */
+            padding: 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners for background */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Community Connect+</h1>
+        <p>The Smart Neighborhood and Campus Hub</p>
+    </header>
+
+    <nav>
+        <div class="dropdown dropdown-about">
+            <a href="#about">About</a>
+            <div class="dropdown-content">
+                <a href="#ar">AR Campus Navigation</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-features">
+            <a href="#features">Features</a>
+        </div>
+        <div class="dropdown dropdown-events">
+            <a href="#events">Events</a>
+            <div class="dropdown-content">
+                <a href="#hackathons">Hackathons</a>
+                <a href="#eco-leader">Eco Leader Program</a>
+                <a href="#study-groups">Smart Study Groups</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-subscriptions">
+            <a href="#subscriptions">Subscriptions</a>
+            <div class="dropdown-content">
+                <a href="ai-advice.html">AI-powered Advice</a>
+                <a href="sponsorship.html">Sponsorship Opportunities</a>
+                <a href="premium-access.html">Premium Event Access</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-community">
+            <a href="#community">Community</a>
+        </div>
+        <div class="dropdown dropdown-contact">
+            <a href="#contact">Contact</a>
+            <div class="dropdown-content">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://example.com" target="_blank">Website</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-primary-customer">
+            <a href="#primary-customer">Primary Customer</a>
+            <div class="dropdown-content">
+                <a href="#">Student</a>
+                <a href="#">Faculty and Staff</a>
+                <a href="#">Local Business</a>
+            </div>
+        </div>
+        <div class="dropdown dropdown-secondary-customer">
+            <a href="#secondary-customer">Secondary Customer</a>
+            <div class="dropdown-content">
+                <a href="#">Campus Administration</a>
+                <a href="#">NGOs</a>
+                <a href="#">Municipal Authorities</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Community Connect+</h2>
+            <p>Community Connect+ is a platform that brings communities and educational institutions closer by fostering social interaction, events, and sustainability initiatives through advanced AI, AR, and gamification.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>AI-powered personalized recommendations</li>
+                <li>AR-based navigation for campuses and neighborhoods</li>
+                <li>Ticket system for local and campus events</li>
+                <li>Sponsorship opportunities for local businesses</li>
+                <li>Gamified engagement to earn rewards</li>
+            </ul>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section">
+            <h2>Upcoming Events</h2>
+            <p>Stay connected with the latest events happening in your community or campus. Check out the events below and book your tickets today!</p>
+            <a href="events.html" class="btn">View Events</a>
+        </section>
+
+        <!-- Subscriptions Section -->
+        <section id="subscriptions" class="section">
+            <h2>Subscription Plans</h2>
+            <p>Subscribe to Community Connect+ for exclusive benefits like AI-powered advice, premium event access, and sponsorship opportunities for businesses.</p>
+            <div class="dropdown dropdown-subscriptions">
+                <a href="#" class="btn">Choose Subscription</a>
+                <div class="dropdown-content">
+                    <a href="ai-advice.html">AI-powered Advice</a>
+                    <a href="sponsorship.html">Sponsorship Opportunities</a>
+                    <a href="premium-access.html">Premium Event Access</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="section">
+            <h2>About the Community</h2>
+            <p>Our platform connects students, faculty, residents, and local businesses to create thriving, sustainable environments. Whether it's campuses or neighborhoods, Community Connect+ helps people engage and collaborate effectively.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Community Connect+. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
